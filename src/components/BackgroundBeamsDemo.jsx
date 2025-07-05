@@ -1,54 +1,64 @@
 "use client";
-// import React from "react";
 import { BackgroundBeams } from "./ui/background-beams";
 import { useState, useEffect } from "react";
 
 export function BackgroundBeamsDemo() {
     const [currentText, setCurrentText] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
-    const text = ["Developer", "Designer", "Freelancer"]; // Array of words
+    const text = ["Developer", "Designer", "Freelancer"];
     const delay = 2000;
 
     useEffect(() => {
         const typingInterval = setInterval(() => {
             setCurrentText(text[currentIndex]);
-            setCurrentIndex((currentIndex + 1) % text.length); // Loop back to the beginning
+            setCurrentIndex((currentIndex + 1) % text.length);
         }, delay);
 
         return () => clearInterval(typingInterval);
-    }, [text, delay]);
+    }, [currentIndex]);
+
     return (
-        <div className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
-            <div className="grid gap-16 grid-cols-1 md:grid-cols-2 text-center p-4 max-w-full md:mx-[150px] z-50">
-                <div className="flex flex-col mx-6 my-auto">
-                    <h3 className="text-[#71D9D3] text-left font-semibold">Hello, I am Guriya Kumari</h3>
-                    <div className="text-7xl font-[Anta] text-left text-white">
+        <div className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 sm:px-8 md:px-16 w-full max-w-7xl mt-20 z-10">
+
+                {/* Left Section */}
+                <div className="flex flex-col justify-center space-y-6 text-left">
+                    <h3 className="text-[#71D9D3] font-semibold text-base sm:text-lg">
+                        Hello, I am Guriya Kumari
+                    </h3>
+                    <div className="text-3xl sm:text-5xl md:text-6xl font-[Anta] text-white leading-tight break-words">
                         Craft, Code <br />
-                        <span className="">
-                            {currentText}
-                        </span>
+                        <span className="text-[#C084FC]">{currentText}</span>
                     </div>
-                    <div className="mt-10 flex flex-wrap gap-8 justify-items-start">
-                        <button className="mx-2 hover:animate-bounce">
-                            <a href="./file/Guriya Resume.pdf" target="_blank" className="px-8 py-3 hover:text-[#C084FC] bg-[#71D9D3] hover:bg-white hover:transition-colors hover:ease-in-out hover:duration-700 text-black font-bold">
-                                Download CV <span>
-                                    <i className="fa-solid fa-arrow-down px-2 hover:animate-bounce font-bold"></i>
-                                </span>
-                            </a>
-                        </button>
-                        <button className="mx-2 hover:animate-bounce">
-                            <a href="#social_section" className="px-8 py-3 text-[#C084FC] bg-white hover:bg-[#71D9D3] hover:transition-colors ease-in-out hover:duration-700 hover:text-black font-bold">
-                                Contact Me<span className="">
-                                    <i className="px-2 fa-solid fa-user-tie"></i>
-                                </span>
-                            </a>
-                        </button>
+
+                    <div className="mt-6 flex flex-wrap gap-4 sm:gap-6">
+                        <a
+                            href="./file/Guriya Resume.pdf"
+                            target="_blank"
+                            className="px-6 py-3 bg-[#71D9D3] text-black font-bold rounded hover:bg-white hover:text-[#C084FC] transition duration-500"
+                        >
+                            Download CV <i className="fa-solid fa-arrow-down px-1"></i>
+                        </a>
+                        <a
+                            href="#social_section"
+                            className="px-6 py-3 bg-white text-[#C084FC] font-bold rounded hover:bg-[#71D9D3] hover:text-black transition duration-500"
+                        >
+                            Contact Me <i className="fa-solid fa-user-tie px-1"></i>
+                        </a>
                     </div>
                 </div>
-                <div className="text-white flex items-center justify-center h-full rounded-full">
-                    <img src="img/tejasviprofile.png" className="md:w-96 w-80" />
+
+                {/* Right Section */}
+                <div className="flex items-center justify-center">
+                    <img
+                        src="img/tejasviprofile.png"
+                        alt="Profile"
+                        className="w-60 sm:w-72 md:w-80 lg:w-96 h-auto rounded-xl"
+                    />
                 </div>
             </div>
+
+            {/* Background Effect */}
             <BackgroundBeams />
         </div>
     );

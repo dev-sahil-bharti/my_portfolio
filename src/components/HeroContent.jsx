@@ -17,10 +17,10 @@ export default function HeroContent() {
 
     return (
         <>
-            <div className="grid gap-16 grid-cols-1 md:grid-cols-2 text-center p-4 max-w-full md:mx-[150px] z-50">
+            <div className="grid gap-16 grid-cols-1 md:grid-cols-2 text-center p-4 max-w-full md:mx-[150px] z-50 px-4 sm:px-8 md:px-16 py-12 md:py-24 mt-44">
                 <div className="flex flex-col mx-6 my-auto">
                     <h3 className="text-[#71D9D3] text-left font-semibold">Hello, I am Guriya Kumari</h3>
-                    <div className="text-7xl font-[Anta] text-left text-white">
+                    <div className="text-2xl sm:text-3xl font-[Anta] text-left text-white w-full break-words leading-tight" >
                         Craft, Code <br />
                         <span className="">
                             {currentText}
