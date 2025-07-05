@@ -22,16 +22,17 @@ export function BackgroundBeamsDemo() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 sm:px-8 md:px-16 w-full max-w-7xl mt-20 z-10">
 
                 {/* Left Section */}
-                <div className="flex flex-col justify-center space-y-6 text-left">
+                <div className="flex flex-col justify-center space-y-6 items-center text-center md:items-start md:text-left w-full">
                     <h3 className="text-[#71D9D3] font-semibold text-base sm:text-lg">
                         Hello, I am Guriya Kumari
                     </h3>
+
                     <div className="text-3xl sm:text-5xl md:text-6xl font-[Anta] text-white leading-tight break-words">
                         Craft, Code <br />
                         <span className="text-[#C084FC]">{currentText}</span>
                     </div>
 
-                    <div className="mt-6 flex flex-wrap gap-4 sm:gap-6">
+                    <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 w-full">
                         <a
                             href="./file/Guriya Resume.pdf"
                             target="_blank"
@@ -47,6 +48,7 @@ export function BackgroundBeamsDemo() {
                         </a>
                     </div>
                 </div>
+
 
                 {/* Right Section */}
                 <div className="flex items-center justify-center">
