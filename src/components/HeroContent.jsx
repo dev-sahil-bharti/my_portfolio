@@ -13,13 +13,14 @@ export default function HeroContent() {
         }, delay);
 
         return () => clearInterval(typingInterval);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [text, delay]);
 
     return (
         <>
             <div className="grid gap-16 grid-cols-1 md:grid-cols-2 text-center p-4 max-w-full md:mx-[150px] z-50 px-4 sm:px-8 md:px-16 py-12 md:py-24 mt-44">
                 <div className="flex flex-col mx-6 my-auto">
-                    <h3 className="text-[#71D9D3] text-left font-semibold">Hello, I am Guriya Kumari</h3>
+                    <h3 className="text-[#71D9D3] text-left font-semibold">Hello, I am Sahil Bharti</h3>
                     <div className="text-2xl sm:text-3xl font-[Anta] text-left text-white w-full break-words leading-tight" >
                         Craft, Code <br />
                         <span className="">
@@ -27,24 +28,27 @@ export default function HeroContent() {
                         </span>
                     </div>
                     <div className="mt-10 flex flex-wrap gap-8 justify-items-start">
-                        <button className="mx-2 hover:animate-bounce">
-                            <a href="./file/Guriya Resume.pdf" target="_blank" className="px-8 py-3 hover:text-[#C084FC] bg-[#71D9D3] hover:bg-white hover:transition-colors hover:ease-in-out hover:duration-700 text-black font-bold">
-                                Download CV <span>
-                                    <i className="fa-solid fa-arrow-down px-2 hover:animate-bounce font-bold"></i>
-                                </span>
-                            </a>
-                        </button>
-                        <button className="mx-2 hover:animate-bounce">
-                            <a href="#social_section" className="px-8 py-3 text-[#C084FC] bg-white hover:bg-[#71D9D3] hover:transition-colors ease-in-out hover:duration-700 hover:text-black font-bold">
-                                Contact Me<span className="">
-                                    <i className="px-2 fa-solid fa-user-tie"></i>
-                                </span>
-                            </a>
-                        </button>
+                        <a
+                            href="/file/Sahil_Resume_ATS.pdf"
+                            download="Sahil_Resume_ATS.pdf"
+                            className="mx-2 inline-block hover:animate-bounce px-8 py-3 hover:text-[#C084FC] bg-[#71D9D3] hover:bg-white transition-colors ease-in-out duration-700 text-black font-bold rounded"
+                        >
+                            Download CV <span>
+                                <i className="fa-solid fa-arrow-down px-2 font-bold"></i>
+                            </span>
+                        </a>
+                        <a
+                            href="#social_section"
+                            className="mx-2 inline-block hover:animate-bounce px-8 py-3 text-[#C084FC] bg-white hover:bg-[#71D9D3] transition-colors ease-in-out duration-700 hover:text-black font-bold rounded"
+                        >
+                            Contact Me<span className="">
+                                <i className="px-2 fa-solid fa-user-tie"></i>
+                            </span>
+                        </a>
                     </div>
                 </div>
                 <div className="text-white flex items-center justify-center h-full animate-[bounce_1s_infinite_ease-in-out]">
-                    <img src="img/tejasviprofile.png" className="md:w-96 w-80" />
+                    <img src="img/sahilprofile.PNG" className="md:w-96 w-80" />
                 </div>
             </div>
         </>

@@ -4,8 +4,7 @@ import WorkSection from './components/WorkSection'
 import { StickyScrollRevealDemo } from './components/StickyScrollRevealDemo'
 import SocialSection from './components/SocialSection'
 import { BackgroundBeamsDemo } from './components/BackgroundBeamsDemo';
-import EmailSubscription from './components/EmailSubscription';
-
+ 
 
 export default function App() {
   return (
@@ -15,7 +14,6 @@ export default function App() {
       <StickyScrollRevealDemo />
       <WorkSection />
       <InfiniteMovingCardsDemo />
-      <EmailSubscription />
       <SocialSection />
     </div>
   )

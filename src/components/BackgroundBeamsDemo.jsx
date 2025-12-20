@@ -15,6 +15,7 @@ export function BackgroundBeamsDemo() {
         }, delay);
 
         return () => clearInterval(typingInterval);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentIndex]);
 
     return (
@@ -24,7 +25,7 @@ export function BackgroundBeamsDemo() {
                 {/* Left Section */}
                 <div className="flex flex-col justify-center space-y-6 items-center text-center md:items-start md:text-left w-full">
                     <h3 className="text-[#71D9D3] font-semibold text-base sm:text-lg">
-                        Hello, I am Guriya Kumari
+                        Hello, I am Sahil Bharti
                     </h3>
 
                     <div className="text-3xl sm:text-5xl md:text-6xl font-[Anta] text-white leading-tight break-words">
@@ -34,8 +35,8 @@ export function BackgroundBeamsDemo() {
 
                     <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 w-full">
                         <a
-                            href="./file/Guriya Resume.pdf"
-                            target="_blank"
+                            href="/file/Sahil_Resume_ATS.pdf"
+                            download="Sahil_Resume_ATS.pdf"
                             className="px-6 py-3 bg-[#71D9D3] text-black font-bold rounded hover:bg-white hover:text-[#C084FC] transition duration-500"
                         >
                             Download CV <i className="fa-solid fa-arrow-down px-1"></i>
@@ -53,9 +54,9 @@ export function BackgroundBeamsDemo() {
                 {/* Right Section */}
                 <div className="flex items-center justify-center">
                     <img
-                        src="img/tejasviprofile.png"
+                        src="/img/sahilprofile.PNG"
                         alt="Profile"
-                        className="w-60 sm:w-72 md:w-80 lg:w-96 h-auto rounded-xl"
+                        className="w-60 sm:w-72 md:w-80 lg:w-96 h-auto rounded-xl animate-float"
                     />
                 </div>
             </div>

@@ -13,6 +13,7 @@ export const StickyScroll = ({
     }[];
 }) => {
     const [activeCard, setActiveCard] = React.useState(0);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const ref = useRef<any>(null);
     const { scrollYProgress } = useScroll({
         container: ref,
@@ -34,11 +35,7 @@ export const StickyScroll = ({
         "var(--black)",
         "var(--neutral-900)",
     ];
-    const linearGradients = [
-        "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-        "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-        "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
-    ];
+
     return (
         <div className="bg-black pt-10">
             <motion.div
