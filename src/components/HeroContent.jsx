@@ -48,7 +48,7 @@ export default function HeroContent() {
                     </div>
                 </div>
                 <div className="text-white flex items-center justify-center h-full animate-[bounce_1s_infinite_ease-in-out]">
-                    <img src="img/sahilprofile.PNG" className="md:w-96 w-80" />
+                    <img src="img/sahilprofile1.png" className="md:w-96 w-90" />
                 </div>
             </div>
         </>

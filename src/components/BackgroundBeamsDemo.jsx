@@ -54,7 +54,7 @@ export function BackgroundBeamsDemo() {
                 {/* Right Section */}
                 <div className="flex items-center justify-center">
                     <img
-                        src="/img/sahilprofile.PNG"
+                        src="/img/sahilprofile1.png"
                         alt="Profile"
                         className="w-60 sm:w-72 md:w-80 lg:w-96 h-auto rounded-xl animate-float"
                     />
