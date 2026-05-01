@@ -35,8 +35,8 @@ export function HeroSection() {
 
                     <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 w-full">
                         <a
-                            href="/file/Sahil_Resume_Without_Logo.pdf"
-                            download="Sahil_Resume_Without_Logo.pdf"
+                            href="/file/Sahil_Resume_ATS working.pdf"
+                            download="Sahil_Resume_ATS working.pdf"
                             className="px-6 py-3 bg-[#71D9D3] text-black font-bold rounded hover:bg-white hover:text-[#C084FC] transition duration-500"
                         >
                             Download CV <i className="fa-solid fa-arrow-down px-1"></i>

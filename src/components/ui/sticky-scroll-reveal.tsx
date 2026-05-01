@@ -10,7 +10,6 @@ export const StickyScroll = ({
         title: string;
         description: string;
         image: string;
-        Live?: string;
     }[];
 }) => {
     const [activeCard, setActiveCard] = React.useState(0);
@@ -73,18 +72,6 @@ export const StickyScroll = ({
                                     >
                                         {item.description}
                                     </motion.p>
-                                    {item.Live && (
-                                        <motion.a
-                                            initial={{ opacity: 0 }}
-                                            animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                                            href={item.Live}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="mt-6 inline-flex items-center px-4 py-2 bg-[#71D9D3] text-black text-sm font-bold rounded hover:bg-white hover:text-[#C084FC] transition duration-300"
-                                        >
-                                            View Live <i className="fa-solid fa-external-link-alt ml-2"></i>
-                                        </motion.a>
-                                    )}
                                 </div>
                                 <div>
                                     <motion.p
