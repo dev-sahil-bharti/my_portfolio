@@ -34,9 +34,9 @@ const content = [
 
 export function ProjectsSection() {
     return (
-        <div className="p-10 bg-black">
-            <div className="">
-                <h1 className="text-white text-center font-smibold text-3xl font-[Lora] md:pt-0">My Project</h1>
+        <div id="projects" className="px-4 py-12 sm:p-10 bg-black">
+            <div className="mb-8">
+                <h1 className="text-white text-center font-semibold text-3xl sm:text-4xl font-[Lora] md:pt-0">My Projects</h1>
             </div>
             <StickyScroll content={content} />
         </div>

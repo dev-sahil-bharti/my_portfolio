@@ -4,19 +4,22 @@ import { LampContainer } from "../ui/lamp";
 
 export function AboutSection() {
     return (
-        <LampContainer>
-            <motion.h1
-                initial={{ opacity: 0.5, y: 100 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                    delay: 0.3,
-                    duration: 0.8,
-                    ease: "easeInOut",
-                }}
-                className="px-4 sm:px-8 lg:px-16 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center font-medium tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-slate-300 to-slate-100 max-w-3xl mx-auto mt-8"
-            >
-                Full-stack developer skilled in React, Node.js, Express.js, MongoDB, and AI integration. Experienced in developing chat applications, authentication systems, job portals, and AI-powered features including chatbots, automation, and intelligent data processing.
-            </motion.h1>
-        </LampContainer>
+        <section id="about">
+            <LampContainer>
+                <motion.h1
+                    initial={{ opacity: 0.5, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: "easeInOut",
+                    }}
+                    className="px-4 sm:px-8 lg:px-16 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center font-medium tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-slate-300 to-slate-100 max-w-3xl mx-auto mt-8"
+                >
+                    Full Stack Developer MERN with hands-on experience in building scalable web applications and RESTful APIs. Skilled in React.js, Node.js, and cloud deployment (AWS). Strong foundation in Data Structures and problem-solving, focused on efficient
+                    and user-centric solutions
+                </motion.h1>
+            </LampContainer>
+        </section>
     );
 }

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export function HeroSection() {
     const [currentText, setCurrentText] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
-    const text = ["Developer", "Designer", "Freelancer"];
+    const text = ["Full Stack Developer", "Freelancer"];
     const delay = 2000;
 
     useEffect(() => {
@@ -19,7 +19,7 @@ export function HeroSection() {
     }, [currentIndex]);
 
     return (
-        <div className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
+        <div id="home" className="min-h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 sm:px-8 md:px-16 w-full max-w-7xl mt-20 z-10">
 
                 {/* Left Section */}
@@ -42,7 +42,7 @@ export function HeroSection() {
                             Download CV <i className="fa-solid fa-arrow-down px-1"></i>
                         </a>
                         <a
-                            href="#social_section"
+                            href="#contact"
                             className="px-6 py-3 bg-white text-[#C084FC] font-bold rounded hover:bg-[#71D9D3] hover:text-black transition duration-500"
                         >
                             Contact Me <i className="fa-solid fa-user-tie px-1"></i>
