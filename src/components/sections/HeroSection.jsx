@@ -67,7 +67,7 @@ export function HeroSection() {
                     <div className="relative group">
                         <div className="absolute inset-0 bg-gradient-to-tr from-[#71D9D3] to-[#C084FC] rounded-full blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></div>
                         <img
-                            src="/img/headerProfile.png"
+                            src="/img/headerProfile.jpg"
                             alt="Profile"
                             className="relative w-64 sm:w-85 md:w-80 lg:w-96 h-auto rounded-3xl border-2 border-[#71D9D3]/30 group-hover:border-[#C084FC]/50 drop-shadow-[0_0_30px_rgba(113,217,211,0.4)] group-hover:drop-shadow-[0_0_20px_rgba(192,132,252,0.6)] group-hover:scale-[1.02] transition-all duration-500"
                         />
