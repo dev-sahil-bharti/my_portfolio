@@ -19,10 +19,10 @@ export function HeroSection() {
             setIsDeleting(false);
             setCurrentIndex((prev) => (prev + 1) % TEXT_OPTIONS.length);
         } else {
-            const nextText = isDeleting 
+            const nextText = isDeleting
                 ? currentString.substring(0, currentText.length - 1)
                 : currentString.substring(0, currentText.length + 1);
-            
+
             timer = setTimeout(() => setCurrentText(nextText), typeDelay);
         }
 

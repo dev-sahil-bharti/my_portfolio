@@ -34,13 +34,13 @@ export default function Header() {
                         <i className={`fa-solid ${isMobileMenuOpen ? 'fa-xmark' : 'fa-bars'} cursor-pointer text-2xl text-neutral-300 hover:text-[#71D9D3] transition-colors`}></i>
                     </div>
                 </div>
-                
+
                 <div className={`${isMobileMenuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'} md:max-h-full md:opacity-100 md:mt-0 overflow-hidden md:overflow-visible transition-all duration-500 ease-in-out w-full md:w-auto`}>
                     <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-1 items-center w-full">
                         {navItems.map((item) => (
-                            <li 
+                            <li
                                 key={item}
-                                className="w-full md:w-auto px-5 py-2 text-base md:text-lg font-medium text-center text-neutral-300 hover:text-[#71D9D3] hover:bg-white/5 rounded-full transition-all cursor-pointer capitalize" 
+                                className="w-full md:w-auto px-5 py-2 text-base md:text-lg font-medium text-center text-neutral-300 hover:text-[#71D9D3] hover:bg-white/5 rounded-full transition-all cursor-pointer capitalize"
                                 onClick={() => scrollToSection(item)}
                             >
                                 {item}
@@ -52,3 +52,4 @@ export default function Header() {
         </div>
     );
 }
+
