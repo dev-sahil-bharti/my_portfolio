@@ -7,7 +7,7 @@ const content = [
         description:
             "Edu-Track – A full-stack web app where students can log their learning goals, track daily progress across subjects, and get AI-generated weekly summaries + study recommendations based on their activity.",
         image: "./img/EduTrack_Dashboard.png",
-        // Live: "https://doctor-point-hms-frontend-3hcq.onrender.com/"
+        Live: "https://edutrack-ai-powered-frontend.onrender.com"
     },
     {
         title: "Doctor Point- Appointment Booking System",
