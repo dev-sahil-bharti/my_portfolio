@@ -24,11 +24,18 @@ const content = [
         Live: "https://rkgraphics-complete-1frontend.onrender.com/"
     },
     {
-        title: "CodeXGPT - manage your Notes on Cloud",
+        title: "CodeXGPT -  Ai ChatBoot",
         description:
             "CodexGPT is an AI chatbot with secure authentication, offering smart conversations, personalized interactions, and seamless user access",
         image: "./img/codeXGPT.png",
         Live: "https://codexgpt-hyw0.onrender.com"
+    },
+    {
+        title: "Royal Fitness SaaS - Gym management system",
+        description:
+            "Royal Fitness is a full-stack online gym management system that provides separate admin and client dashboards for efficient gym operations. It enables membership management, workout tracking, scheduling, and seamless interaction between administrators and clients.",
+        image: "./img/royalFitnessSaaS.png",
+        // Live: "https://codexgpt-hyw0.onrender.com"
     },
     {
         title: "iNotebook - manage your Notes on Cloud",
