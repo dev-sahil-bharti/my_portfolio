@@ -4,17 +4,37 @@ import logo from '../../assets/logo.png';
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [activeSection, setActiveSection] = useState('home');
 
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
+            
+            // Track active section
+            const sections = ['home', 'about', 'projects', 'blogs', 'contact'];
+            let found = false;
+            
+            for (let section of sections) {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    // Check if section is in viewport
+                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= 0) {
+                        setActiveSection(section);
+                        found = true;
+                        break;
+                    }
+                }
+            }
         };
+        
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const scrollToSection = (id) => {
         setIsMobileMenuOpen(false);
+        setActiveSection(id);
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
@@ -40,7 +60,11 @@ export default function Header() {
                         {navItems.map((item) => (
                             <li
                                 key={item}
-                                className="w-full md:w-auto px-5 py-2 text-base md:text-lg font-medium text-center text-neutral-300 hover:text-[#71D9D3] hover:bg-white/5 rounded-full transition-all cursor-pointer capitalize"
+                                className={`w-full md:w-auto px-5 py-2 text-base md:text-lg font-medium text-center rounded-full transition-all cursor-pointer capitalize ${
+                                    activeSection === item
+                                        ? 'bg-[#71D9D3]/20 text-[#71D9D3] border border-[#71D9D3]/50'
+                                        : 'text-neutral-300 hover:text-[#71D9D3] hover:bg-white/5'
+                                }`}
                                 onClick={() => scrollToSection(item)}
                             >
                                 {item}
