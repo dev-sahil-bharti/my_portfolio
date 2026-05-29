@@ -24,6 +24,13 @@ const content = [
         Live: "https://rkgraphics-complete-1frontend.onrender.com/"
     },
     {
+        title: "CodeXGPT - manage your Notes on Cloud",
+        description:
+            "CodexGPT is an AI chatbot with secure authentication, offering smart conversations, personalized interactions, and seamless user access",
+        image: "./img/codeXGPT.png",
+        Live: "https://codexgpt-hyw0.onrender.com"
+    },
+    {
         title: "iNotebook - manage your Notes on Cloud",
         description:
             "Designed and developed “i-Cloud Notebook,” featuring user authentication, secure cloud-based note storage, create/read/update/delete operations, and a responsive interface for multi-device access.",
